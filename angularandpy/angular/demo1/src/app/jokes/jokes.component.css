@@ -1,0 +1,20 @@
+.matcls{
+    margin-top: 5px;
+    font-style: oblique;
+    float: left;
+    width: 82%;
+    margin-right: 5px;
+}
+.jokes{
+    font-style: oblique;
+    text-align: center;
+}
+.example-form-field {
+  width: 100%;
+}
+.matbtn{
+    margin-bottom: 10px;
+}
+.delbtn{
+float: right
+}

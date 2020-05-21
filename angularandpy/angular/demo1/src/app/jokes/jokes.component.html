@@ -1,0 +1,37 @@
+
+<h1 class="jokes">
+Jokes list 
+</h1>
+
+<mat-form-field class="example-form-field">
+  <mat-label>Write new joke</mat-label>
+  <input matInput type="text" #jvalue>
+  <button matSuffix class="matbtn" aria-label="Clear" mat-raised-button color="primary" [disabled]="jvalue?.value.length < 1" 
+  (click)="addJokes(jvalue?.value);jvalue.value=''" >
+    Add Joke
+  </button>
+  
+</mat-form-field>
+<!-- 
+<mat-card class="matcls">{{i+1}}. {{joke?.desc}}</mat-card> -->
+<div *ngIf = "jokes?.length > 0">
+<div *ngFor="let joke of jokes; let i = index">
+  
+  <mat-card class="matcls">{{i+1}}. {{joke?.desc}}</mat-card>
+  <div class="example-button-row">
+    <div class="example-flex-container">
+      <div class="example-button-container">
+        <button (click)="deleteJoke(joke.id)"class="delbtn" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+     
+    </div>
+  </div>
+  
+</div>
+</div>
+<div *ngIf="!jokes?.length">
+  Please add Jokes to see list.
+</div>
+

@@ -1,0 +1,9 @@
+{
+    "code":200,
+    "message":"Get Records Successfully.",
+    "dataCount": 200,
+    "data":[
+
+      1,2,3
+]
+}

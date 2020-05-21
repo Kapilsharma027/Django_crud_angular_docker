@@ -1,0 +1,32 @@
+###### Angualr ########
+
+for single angualr build 
+
+
+/* building docker file 
+   buliding file
+ docker build -t demo1 .
+
+ runing file(on 192.168.99.100:8080)
+docker run -d -p 8080:3000 demo1
+ */
+ 
+###### python ########
+
+follow for django(with restframework and postgresql)
+https://docs.docker.com/compose/django/
+or
+https://www.youtube.com/watch?v=610jg8bK0I8 and
+https://www.youtube.com/watch?v=Y_rh-VeC_j4&t=522s
+
+This is a file in which i have explained how to use this project 
+To run compose file use command 
+Below is the commmand to run "web" service with migrate (migration file is already available in code)
+
+ALLOWED_HOSTS = ['*'] added in setting.py so that it allow all headers other than localhost
+ 
+
+*****RUN******
+docker-compose run web python manage.py migrate // to migrate DB script or make db ready with table and data
+docker-compose build // to build again
+docker-compose up // to build and run 

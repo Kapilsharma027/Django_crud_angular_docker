@@ -1,0 +1,34 @@
+diff --git a/angularandpy/angular/demo1/src/environments/environment.ts b/angularandpy/angular/demo1/src/environments/environment.ts
+index 3ee79ab..9025512 100644
+--- a/angularandpy/angular/demo1/src/environments/environment.ts
++++ b/angularandpy/angular/demo1/src/environments/environment.ts
+@@ -19,5 +19,5 @@ export const BaseURL = 'http://192.168.99.100:8000';
+  docker build -t demo1 .
+ 
+  runing file(on 192.168.99.100:8080)
+-docker run -d -p 8080:3000 demo
++docker run -d -p 8080:3000 demo1
+  */
+\ No newline at end of file
+diff --git a/angularandpy/demopy/demopy/settings.py b/angularandpy/demopy/demopy/settings.py
+index 0425775..e1ee1cf 100644
+--- a/angularandpy/demopy/demopy/settings.py
++++ b/angularandpy/demopy/demopy/settings.py
+@@ -25,7 +25,7 @@ SECRET_KEY = '&yv^#23ep8hbjq%^b)xo7x&9t*4h-ehp(t5u#6+&c9nrv!bdm$'
+ # SECURITY WARNING: don't run with debug turned on in production!
+ DEBUG = True
+ 
+-ALLOWED_HOSTS = []
++ALLOWED_HOSTS = ['*']
+ 
+ 
+ # Application definition
+@@ -88,7 +88,7 @@ DATABASES = {
+         'NAME': 'jokesdb',
+         'USER': 'postgres',
+         'PASSWORD': '1234',
+-        'HOST':'localhost'
++        'HOST':'db'
+ 
+     }
+ }

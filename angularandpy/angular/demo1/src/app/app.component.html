@@ -1,0 +1,50 @@
+<!-- 
+ 
+<div class="list">
+   
+    <table *ngIf="data?.length > 0" class="custom-table">
+      <tr>
+        <th>Author ID</th>
+        <th>Author First Name</th>
+        <th>Author Last Name</th>
+        <th>Author Email</th>
+        <th>Author Birth Date</th>
+        <th>Author added</th>
+      </tr>
+      <tr *ngFor="let data of data | paginate: config  ; let i = index">
+        <td>{{data?.id}}</td>
+        <td>{{data?.first_name}}</td>
+        <td>{{data?.last_name}}</td>
+        <td>{{data?.email}}</td>
+        <td>{{data?.birthdate}}</td>
+        <td>{{data?.added}}</td>
+      </tr>
+    </table>
+
+    <pagination-controls  
+    (pageChange)="change($event)"
+    directionLinks="true"
+    autoHide="true"
+    responsive="true"
+    previousLabel="Previous"
+    nextLabel="Next"
+
+></pagination-controls>
+ <button (click)="goToFirst()">First</button> 
+ <button (click)="goToLast()">Last</button> 
+</div>
+
+<mat-form-field>
+    <mat-label>Entries per page</mat-label>
+    <mat-select [(value)]="selected" (selectionChange)="setPageSize($event.value)">
+      <mat-option *ngFor="let entry of Entries" [value]="entry">
+        {{entry}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> 
+
+
+  -->
+ <div class="rootcls">
+  <app-jokes></app-jokes>
+ </div> 
