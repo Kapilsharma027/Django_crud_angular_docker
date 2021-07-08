@@ -7,3 +7,8 @@ urlpatterns = [
     path('jokes/<int:pk>',views.jokesdetail,name='jokes'),
 
 ]
+
+
+
+
+
