@@ -42,3 +42,4 @@ def jokesdetail(request, pk):
         joke.delete()
         return HttpResponse(status=204)   
 
+# branch 2
